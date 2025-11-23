@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ansh | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header & Navigation -->
+  <header>
+    <nav>
+      <div class="logo">My Portfolio</div>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hello! I’m Ansh, a BTech CSE student. This is my personal website.</p>
+  </section>
+
+  <hr>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <img src="https://img.freepik.com/premium-vector/character-avatar-isolated_729149-194801.jpg"
+         class="profile-img" alt="profile image">
+
+    <p>
+      I’m from Gurgaon and I have completed my schooling from Ajanta Public School (Sector 31).
+      I am passionate about learning web development.
+    </p>
+  </section>
+
+  <hr>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2 style="text-align:center;">My Projects</h2>
+
+    <ul>
+      <li><b>Portfolio Website:</b> A personal one-page website to showcase your bio, skills, and contact details.</li><br>
+      <li><b>Medium Clone:</b> A simple blog layout that looks like Medium, built only with HTML.</li><br>
+      <li><b>User Form:</b> A webpage with fields like name, email, and message for form handling practice.</li>
+    </ul>
+  </section>
+
+  <hr>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2 style="text-align:center;">My Skills</h2>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML</td>
+          <td>Beginner</td>
+        </tr>
+        <tr>
+          <td>CSS</td>
+          <td>Learning</td>
+        </tr>
+        <tr>
+          <td>JavaScript</td>
+          <td>Learning</td>
+        </tr>
+        <tr>
+          <td>Python</td>
+          <td>Beginner</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <hr>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form>
+      <label>Name:</label>
+      <input type="text" placeholder="Enter your name" required>
+
+      <label>Email:</label>
+      <input type="email" placeholder="Enter your email" required>
+
+      <label>Message:</label>
+      <textarea placeholder="Write your message here" required></textarea>
+
+      <button class="btn" type="submit">Send</button>
+    </form>
+  </section>
+
+  <button id="backToTop" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+  <footer>
+    <p>&copy; 2025 Ansh | Web Developer Student</p>
+  </footer>
+
+  <script>
+    const btn = document.getElementById("backToTop");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 400) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    });
+  </script>
+
+</body>
+</html>

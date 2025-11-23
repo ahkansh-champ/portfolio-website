@@ -1,0 +1,152 @@
+-------------------- Global Styles --------------------
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: #1e88e5;
+}
+
+/* -------------------- Navigation Styles -------------------- */
+nav {
+    background-color: #1e88e5;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+/* -------------------- Section Styles -------------------- */
+section {
+    padding: 60px 15%;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    display: block;
+    margin: 20px auto;
+}
+
+/* -------------------- Table Styles -------------------- */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    box-shadow: 0 0 8px rgba(0,0,0,0.1);
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+thead {
+    background-color: #1e88e5;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* -------------------- Button Styles -------------------- */
+.btn {
+    background-color: #1e88e5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #1565c0;
+}
+
+/* -------------------- Form Styles -------------------- */
+form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* -------------------- Back to Top Button -------------------- */
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    display: none;
+    background-color: #1e88e5;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* -------------------- Footer -------------------- */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e88e5;
+    color: white;
+}
+
+/* -------------------- HR Styling -------------------- */
+hr {
+    border: none;
+    border-top: 3px solid #1e88e5;
+    width: 60%;
+    margin: 40px auto;
+}
